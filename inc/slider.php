@@ -63,7 +63,7 @@ if ( !function_exists( 'ds4_awaken_featured_posts' ) ) :
                Якунина Ирина Вячеславовна  
                </h3>
                <p>
-                   
+                  Добро пожаловать на наш сайт! 
                </p>
             </div>      
 
