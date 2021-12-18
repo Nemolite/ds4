@@ -19,7 +19,13 @@ if ( !function_exists( 'ds4_awaken_featured_posts' ) ) :
         ?>
 
         <div class="awaken-featured-container">
-            <div class="awaken-featured-slider">
+            <div class="awaken-featured-posts" id="ds4-left">
+                <?php do_action('ds4_chif_block');?>           
+            </div> <!-- .awaken-featured-posts -->  
+            <div class="awaken-featured-slider" id="ds4-right">
+                <div class="infoblock">
+                    <?php do_action('ds4_infoblock_welcome');?>
+                </div>
                 <section class="slider">
                     <div class="flexslider">
                         <ul class="slides">
@@ -50,24 +56,11 @@ if ( !function_exists( 'ds4_awaken_featured_posts' ) ) :
                         </ul>
                     </div>
                 </section>
+                <div class="docblock">
+                <?php do_action('ds4_docblock');?>
+                </div>
             </div><!-- .awaken-slider -->
-            <div class="awaken-featured-posts">
-            <div class="ds4-chif">
-               <h3>
-               Заведующий МБДОУ Д/С №4 "Ладушки"  
-               </h3>
-               <div class="ds4-chif-img">
-<img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/zav_dou.jpg" alt="Заведующий МБДОУ Д/С №4 Ладушки Якунина Ирина Вячеславовна ">
-               </div>
-               <h3>
-               Якунина Ирина Вячеславовна  
-               </h3>
-               <p>
-                  Добро пожаловать на наш сайт! 
-               </p>
-            </div>      
-
-            </div>
+           
         </div>
     <?php
     }
