@@ -80,8 +80,8 @@ function ds4_register_main_menu_sidebar_widgets(){
 		'description' => 'Сведения об образовательной организации',
 		'before_widget' => '',
 		'after_widget' => '',
-		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
-		'after_title' => '</span></h4>',
+		'before_title' => '<h3 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h3>',
 	) );
 }
 add_action( 'widgets_init', 'ds4_register_main_menu_sidebar_widgets' );
@@ -135,4 +135,16 @@ function ds4_register_right_doc_menu_widgets(){
 	) );
 }
 add_action( 'widgets_init', 'ds4_register_right_doc_menu_widgets' );
+
+/**
+ * Яндекс карта
+ */
+add_action('ds4_yandex_map','ds4_yandex_map_output');
+function ds4_yandex_map_output(){
+	?>
+	<div class="yandex-map">
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4baf23b2e893b9c3e75070d86effc5f2114ad2e288aed4f3ba50f81b6e7c91a2&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>	
+	</div>
+	<?
+}
 ?>

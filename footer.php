@@ -7,6 +7,7 @@
  * @package Awaken
  */
 ?>
+<?php do_action('ds4_yandex_map');?>
 		</div><!-- container -->
 	</div><!-- #content -->
 

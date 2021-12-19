@@ -28,7 +28,7 @@ class banersWidget extends WP_Widget {
                 <img src="<?php echo esc_url($instance['img']);?>" alt="">
             </div> 
             <div class="teh_baner-text">           
-                <p><?php echo __( $instance['title'], 'teh');?></p>
+                <h3><?php echo __( $instance['title'], 'teh');?></h3>
             </div> 
         </div>
         </a>  
