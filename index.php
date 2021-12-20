@@ -22,7 +22,9 @@ get_header(); ?>
 	<div class="col-xs-12 col-sm-12 col-md-8 <?php echo $rtl ?>">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<div class="bl-gosuslugi">
+            <?php do_action('ds4_gosuslugi');?>
+        </div> 
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ 

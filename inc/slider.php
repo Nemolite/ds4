@@ -25,7 +25,7 @@ if ( !function_exists( 'ds4_awaken_featured_posts' ) ) :
             <div class="awaken-featured-slider" id="ds4-right">
                 <div class="infoblock">
                     <?php do_action('ds4_infoblock_welcome');?>
-                </div>
+                </div>                              
                 <section class="slider">
                     <div class="flexslider">
                         <ul class="slides">

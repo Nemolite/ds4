@@ -53,6 +53,11 @@ require 'inc/welcome.php';
  */
 require 'inc/chif.php';
 
+/**
+ * Банер госуслуги
+ */
+require 'inc/gosuslugi.php';
+
 /**	
  * Для главных банеров в сайтбаре ниже руководителя
  */
