@@ -141,10 +141,14 @@ add_action( 'widgets_init', 'ds4_register_right_doc_menu_widgets' );
  */
 add_action('ds4_yandex_map','ds4_yandex_map_output');
 function ds4_yandex_map_output(){
-	?>
-	<div class="yandex-map">
-	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4baf23b2e893b9c3e75070d86effc5f2114ad2e288aed4f3ba50f81b6e7c91a2&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>	
-	</div>
-	<?
+	if(is_front_page()){
+		?>
+		<div class="yandex-map">
+		<header class="page-entry-header">
+			<h1 class="page-entry-title entry-title">Мы на карте</h1>	</header>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4baf23b2e893b9c3e75070d86effc5f2114ad2e288aed4f3ba50f81b6e7c91a2&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>	
+		</div>
+		<?
+	}
 }
 ?>

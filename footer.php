@@ -63,14 +63,14 @@
 					</div>
 					<div class="col-xs-12 col-md-6 col-sm-6 awfr">
 						<div class="th-copyright">
-							<?php
-								$wp_link = '<a href="http://wordpress.org" target="_blank" title="' . esc_attr__( 'WordPress', 'awaken' ) . '">' . __( 'WordPress', 'awaken' ) . '</a>'; 
-								printf( esc_html__( 'Proudly powered by %s.', 'awaken' ), $wp_link );
+							<?php 
+								$th_link = '<a href="http://themezhut.com/themes/awaken" target="_blank" rel="designer">ThemezHut</a>';
+								printf( esc_html__( 'Тема: %1$s от %2$s.', 'awaken' ), 'Awaken', $th_link ); 
 							?>
 							<span class="sep"> | </span>
 							<?php 
-								$th_link = '<a href="http://themezhut.com/themes/awaken" target="_blank" rel="designer">ThemezHut</a>';
-								printf( esc_html__( 'Theme: %1$s by %2$s.', 'awaken' ), 'Awaken', $th_link ); 
+								$th_link = '<a href="https://vandraren.ru/" target="_blank" rel="designer">VANDRAREN</a>';
+								printf( esc_html__( '%1$s - %2$s.', 'awaken' ), 'Разработка веб-проектов', $th_link ); 
 							?>
 						</div>
 					</div>

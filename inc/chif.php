@@ -16,6 +16,8 @@ function ds4_chif_block_output(){
         <?php dynamic_sidebar( 'top-sidebar-banners' ); ?>
     </div> 
     <div class="ds4-main-doc">
+    <header class="page-entry-header">
+			<h1 class="page-entry-title entry-title">Сведения об ОО</h1>	</header>
         <?php dynamic_sidebar( 'main-menu-sidebar' ); ?>    
     </div>  
     <?

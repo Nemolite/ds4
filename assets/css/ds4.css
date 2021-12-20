@@ -10,6 +10,15 @@
   background-image: url(../img/ladushki3.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.ds4-plugin-spec {
+  width: 248px;
+  height: 45px;
+  border: 1px solid #fff;
+  position: absolute;
+  right: 0px;
 }
 
 .ds4-main-navigation {
@@ -152,5 +161,5 @@
 
 .yandex-map {
   width: 100%;
-  height: 350px;
+  height: 380px;
 }

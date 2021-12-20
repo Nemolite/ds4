@@ -51,7 +51,9 @@
 	<div class="site-branding">
 		<div class="container" id="ds4-fix-container">
 			<div class="site-brand-container ds4-site-header-container">
-			
+			<div class="ds4-plugin-spec">
+			<?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?>
+			</div>
 			</div><!-- .site-brand-container -->
 			<?php if(is_active_sidebar( 'header-ad' )) : ?>
 				<div class="header-ad-area">
